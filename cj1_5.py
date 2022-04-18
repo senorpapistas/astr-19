@@ -1,5 +1,3 @@
-from xml.etree.ElementTree import PI
-from matplotlib.pyplot import table
 '''This program will print out a table of sin(x) vs x where x is a floating point number between
 0 and 2pi. There will be a thousand entries of x, which results in a thousand prints.'''
 
@@ -17,6 +15,7 @@ def main():
     print("x                      | sin(x)\n-----------------------------------------------")
     # This for-loop with loop through the table and print out the x and sin(x) pair.
     for i in range(len(tabulation)):
+        # These prints will be formatted so that the output looks pleasant.
         print(f"{tabulation[i][0]:.20f} | {tabulation[i][1]:.20f}")
 
 if __name__ == '__main__':
